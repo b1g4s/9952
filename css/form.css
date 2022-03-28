@@ -17,7 +17,7 @@ p {
     text-align: center;
 }
 
-input[type=text], input[type=email], textarea{
+input[type=text], input[type=email],textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -30,7 +30,7 @@ label {
     display: inline-block;
 }
 
-input[type=submit] {
+input[type=submit], input[type=reset]{
     background-color: #1e88e5;
     color: white;
     padding: 12px 20px;
@@ -39,7 +39,17 @@ input[type=submit] {
     cursor: pointer;
     float: right;
     width: 75%;
+    margin-top: 5px;
 }
+
+input[type=radio] {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
 
 input[type=submit]:hover {
     background-color: #428bca;
@@ -73,7 +83,7 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit]{
+    .col-25, .col-75, input[type=submit], input[type=reset]{
         width: 100%;
         margin-top: 0;
     }
